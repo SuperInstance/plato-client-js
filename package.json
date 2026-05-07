@@ -1,0 +1,33 @@
+{
+  "name": "@cocapn/plato-client",
+  "version": "0.1.0",
+  "description": "PLATO room protocol client — Node + browser, zero dependencies",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc --noEmit && node --test tests/"
+  },
+  "keywords": [
+    "plato",
+    "agent",
+    "fleet",
+    "cocapn"
+  ],
+  "engines": {
+    "node": ">=18.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
